@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CubeSolver"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Background="#FF343434">
+        Title="Cube Solver 3x3" Height="450" Width="800" Background="#FF343434">
     <Grid>
         <Grid.ColumnDefinitions>
             <!--Part of the cubes data-->
