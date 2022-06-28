@@ -1,0 +1,150 @@
+﻿<Window x:Class="CubeSolver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CubeSolver"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FF343434">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <!--Part of the cubes data-->
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <!--Back Face Of The Rubic Cube-->
+        <Button x:Name="BackFaceBlock1" Grid.Column="7" Grid.Row="1" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock2" Grid.Column="9" Grid.Row="1" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock3" Grid.Column="11" Grid.Row="1" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock4" Grid.Column="7" Grid.Row="3" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock5" Grid.Column="9" Grid.Row="3" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock6" Grid.Column="11" Grid.Row="3" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock7" Grid.Column="7" Grid.Row="5" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock8" Grid.Column="9" Grid.Row="5" Background="#FF00D75A" Click="ChangeColor"/>
+        <Button x:Name="BackFaceBlock9" Grid.Column="11" Grid.Row="5" Background="#FF00D75A" Click="ChangeColor"/>
+
+        <!--Up Face Of The Rubic Cube-->
+        <Button x:Name="UpFaceBlock1" Grid.Column="7" Grid.Row="7" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock2" Grid.Column="9" Grid.Row="7" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock3" Grid.Column="11" Grid.Row="7" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock4" Grid.Column="7" Grid.Row="9" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock5" Grid.Column="9" Grid.Row="9" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock6" Grid.Column="11" Grid.Row="9" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock7" Grid.Column="7" Grid.Row="11" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock8" Grid.Column="9" Grid.Row="11" Background="#FFF9FE6C" Click="ChangeColor"/>
+        <Button x:Name="UpFaceBlock9" Grid.Column="11" Grid.Row="11" Background="#FFF9FE6C" Click="ChangeColor"/>
+
+        <!--Front Face Of The Rubic Cube-->
+        <Button x:Name="FrontFaceBlock1" Grid.Column="7" Grid.Row="13" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock2" Grid.Column="9" Grid.Row="13" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock3" Grid.Column="11" Grid.Row="13" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock4" Grid.Column="7" Grid.Row="15" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock5" Grid.Column="9" Grid.Row="15" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock6" Grid.Column="11" Grid.Row="15" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock7" Grid.Column="7" Grid.Row="17" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock8" Grid.Column="9" Grid.Row="17" Background="#FF0059B9" Click="ChangeColor"/>
+        <Button x:Name="FrontFaceBlock9" Grid.Column="11" Grid.Row="17" Background="#FF0059B9" Click="ChangeColor"/>
+
+        <!--Down Face Of The Rubic Cube-->
+        <Button x:Name="DownFaceBlock1" Grid.Column="7" Grid.Row="19" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock2" Grid.Column="9" Grid.Row="19" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock3" Grid.Column="11" Grid.Row="19" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock4" Grid.Column="7" Grid.Row="21" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock5" Grid.Column="9" Grid.Row="21" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock6" Grid.Column="11" Grid.Row="21" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock7" Grid.Column="7" Grid.Row="23" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock8" Grid.Column="9" Grid.Row="23" Background="#FFFBFDF2" Click="ChangeColor"/>
+        <Button x:Name="DownFaceBlock9" Grid.Column="11" Grid.Row="23" Background="#FFFBFDF2" Click="ChangeColor"/>
+
+        <!--Left Face Of The Rubic Cube-->
+        <Button x:Name="LeftFaceBlock1" Grid.Column="1" Grid.Row="13" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock2" Grid.Column="3" Grid.Row="13" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock3" Grid.Column="5" Grid.Row="13" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock4" Grid.Column="1" Grid.Row="15" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock5" Grid.Column="3" Grid.Row="15" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock6" Grid.Column="5" Grid.Row="15" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock7" Grid.Column="1" Grid.Row="17" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock8" Grid.Column="3" Grid.Row="17" Background="#FFFD5E35" Click="ChangeColor"/>
+        <Button x:Name="LeftFaceBlock9" Grid.Column="5" Grid.Row="17" Background="#FFFD5E35" Click="ChangeColor"/>
+
+        <!--Rigth Face Of The Rubic Cube-->
+        <Button x:Name="RightFaceBlock1" Grid.Column="13" Grid.Row="13" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock2" Grid.Column="15" Grid.Row="13" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock3" Grid.Column="17" Grid.Row="13" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock4" Grid.Column="13" Grid.Row="15" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock5" Grid.Column="15" Grid.Row="15" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock6" Grid.Column="17" Grid.Row="15" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock7" Grid.Column="13" Grid.Row="17" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock8" Grid.Column="15" Grid.Row="17" Background="#FFFC0A2D" Click="ChangeColor"/>
+        <Button x:Name="RightFaceBlock9" Grid.Column="17" Grid.Row="17" Background="#FFFC0A2D" Click="ChangeColor"/>
+
+        <!--Solve Button-->
+        <Border Grid.Column="19" Grid.Row="23" BorderBrush="#FFfBFDF2" BorderThickness="2" Margin="0,0,2,0"/>
+        <Button x:Name="SolveButton" Grid.Column="19" Grid.Row="23" Background="#FF343434" Margin="1,1,4,1"
+                    Content="Solve Cube" Foreground="#FFfBFDF2" FontSize="18" 
+                    FontFamily="Segoe UI" VerticalAlignment="Center" Click="SolveCube"/>
+
+        <!--Next Button-->
+
+        <!--Texts Of Solving-->
+        <Border BorderThickness="1" BorderBrush="#ffffff" Grid.Column="19" Grid.Row="1" Grid.RowSpan="21">
+            <RichTextBox x:Name="richTextBox" Foreground="#FFfBFDF2" HorizontalAlignment="Left" FontSize="20" Background="#FF343434"/>
+        </Border>
+
+    </Grid>
+</Window>
